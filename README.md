@@ -9,3 +9,4 @@
 * php artisan migrate
 * php artisan serve
 
+<p>Az oldalt majd itt utdja elérni [http://127.0.0.1:8000/](http://127.0.0.1:8000/)</p>
