@@ -19,7 +19,7 @@ class HomeController extends Controller
     {
         $json = json_decode(Storage::get("bestsellers_with_categories.json"),true);
 
-        /*foreach ($json as $book)
+        foreach ($json as $book)
         {
 
             $author = new Author(['name' => $book['Author']]);
@@ -30,7 +30,7 @@ class HomeController extends Controller
 
             $new_book = New Book(['name' => $book['Name'], 'user_rating' => $book['User Rating'], 'reviews' => $book['Reviews'], 'price'=>$book['Price'], 'year'=>$book['Year'], 'author_id' => $author->id, 'genre_id' => $genre->id]);
             $new_book->save();
-        }*/
+        }
 
         $books = Book::paginate(15);
 
