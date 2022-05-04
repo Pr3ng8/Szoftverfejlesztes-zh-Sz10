@@ -4,6 +4,8 @@
 ## Laravel elindítása
 <p>A zárthelyi mappában ki kell adni command line parancsban ezeket:</p>
 
+* composer install
+* npm install
 * php artisan migrate
 * php artisan serve
 
